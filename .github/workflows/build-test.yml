@@ -1,0 +1,26 @@
+name: Build Test
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  run-lint-and-build:
+    name: Run Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Run Build
+      run: npm run build

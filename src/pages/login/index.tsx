@@ -24,12 +24,12 @@ const Login = () => {
         localStorage.setItem('accessToken', result.accessToken);
         localStorage.setItem('refreshToken', result.refreshToken);
         alert('로그인에 성공하셨습니다');
+        navigate('/');
 
         const userId = await getAuthUser();
         if (userId) {
           localStorage.setItem('userId', userId);
         }
-        navigate('/');
       } else {
         window.alert(
           '로그인에 실패하셨습니다. 정확하게 입력되었는 지 확인해주세요.',

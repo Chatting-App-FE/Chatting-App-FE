@@ -48,7 +48,7 @@ smartalk은 사용자들의 효율적인 커뮤니케이션을 지원합니다
 ### 사이드바 & toast
 
 - 새로운 채팅방 추가 toast
-  ![inviteToast.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/3ef8dbd9-414c-4cf5-813d-32ecb943cc67/1423fe0f-5c35-4792-872b-5407cd12fe0c/inviteToast.gif)
+![inviteToast](https://github.com/Chatting-App-FE/Chatting-App-FE/assets/139188760/189ad89d-0e1f-4b3a-ab65-d70239164324)
 
 서버에 **새로운 채팅방이 개설**되거나, **타인에게 초대**를 받은 경우에도 'AA방이 추가되었습니다.’라는 toast를 띄웁니다.
 
